@@ -24,7 +24,7 @@
       "typeorm": "0.3.15"
    },
    "scripts": {
-      "start": "nodemon src/index.ts",
+      "start": "nodemon ./build/index.js",
       "build": "rimraf ./build && tsc",
       "dev": "nodemon -w *.ts -w .env src/index.ts",
       "typeorm": "typeorm-ts-node-commonjs"
