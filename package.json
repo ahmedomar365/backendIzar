@@ -4,7 +4,7 @@
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
    "engines": {
-
+      "node": "14.x"
    },
    "devDependencies": {
       "@types/node": "^16.11.10",
