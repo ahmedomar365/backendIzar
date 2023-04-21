@@ -8,18 +8,8 @@
       "module": "commonjs",
       "moduleResolution": "node",
       "outDir": "./build",
-      "baseUrl": ".",
-      "paths": {
-         "*": ["node_modules/*", "src/types/*"]
-     },
+      "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "sourceMap": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true
-      
-
-   },
-   "include": ["./src/**/*"]
+      "sourceMap": true
+   }
 }
-
-
