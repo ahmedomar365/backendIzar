@@ -7,10 +7,11 @@ import { DB_PASS, DB_URL } from "./config"
 export const AppDataSource = new DataSource({
     type: "postgres",
     host: DB_URL,
+    ssl: true,
     port: 5432,
-    username: "rtpiscxq",
+    username: "izart_user",
     password: DB_PASS,
-    database: "rtpiscxq",
+    database: "izart",
     synchronize: true,
     logging: false,
     entities: [User, Product],
