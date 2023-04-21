@@ -1,8 +1,8 @@
 {
     "version": 2,
-    "builds" : [
+    "build" : [
         {
-            "src": "build/index.js",
+            "src": "./build/index.js",
             "use": "@vercel/node",
             "config": { "includeFiles": ["build/**"] }
         }
