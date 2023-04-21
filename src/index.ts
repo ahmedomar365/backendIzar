@@ -6,14 +6,10 @@ import { Routes } from "./routes"
 import * as morgan from 'morgan';
 const multer  = require('multer')
 const upload = multer({ dest: 'uploads/' })
-import * as cors from "cors";
+
 import { User } from "./entity/User"
 
 import { port } from "./config"
-var corsOptions = {
-    origin: "http://localhost:3000"
-  };
-
 
 // console.log("hello world");
 
@@ -26,7 +22,6 @@ AppDataSource.initialize().then(async () => {
     // create express app
     const app = express()
     // app.use(bodyParser.json())
-    app.use(cors(corsOptions));
 
     app.use(morgan('tiny'));
 
